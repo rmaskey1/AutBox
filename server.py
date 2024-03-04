@@ -48,3 +48,7 @@ def create_user():
             }
         )
         return jsonify({"email": user_data['email']})
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run()
